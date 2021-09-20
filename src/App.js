@@ -60,7 +60,9 @@ const App = () => {
           );
         })}
       </div>
-      <footer>Emoji Interpreter: Enter emoji to get the meaning of it.</footer>
+      <footer>
+        <h4>Emoji Interpreter: Enter emoji to get the meaning of it.</h4>
+      </footer>
     </div>
   );
 };
