@@ -39,7 +39,9 @@ const App = () => {
   }
   return (
     <>
-      <h1>Emoji Interpreter</h1>
+      <div className="navbar">
+        <h1>Emoji Interpreter</h1>
+      </div>
       <input onChange={inputClickHandler} placeholder="Enter emoji" />
       <h2>Meaning: {meaning}</h2>
       <h3>Emojis We Know</h3>
