@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcd34d;
+  height: 10vh;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0rem;
+}
+
+.input h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.inputText {
+  height: 3rem;
+  width: 72%;
+  padding: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.emojis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+span {
+  padding: 1rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 3.5rem;
+  background-color: #fcd34d;
+  text-align: center;
+  padding: 18px;
+}

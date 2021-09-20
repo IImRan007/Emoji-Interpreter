@@ -38,22 +38,30 @@ const App = () => {
     setMeaning(meaning);
   }
   return (
-    <>
+    <div className="App">
       <div className="navbar">
-        <h1>Emoji Interpreter</h1>
+        <h1>😀Emoji Interpreter</h1>
       </div>
-      <input onChange={inputClickHandler} placeholder="Enter emoji" />
-      <h2>Meaning: {meaning}</h2>
-      <h3>Emojis We Know</h3>
-
-      {emojisWeKnow.map((emoji) => {
-        return (
-          <span onClick={() => emojiClickHandler(emoji)} key={emoji}>
-            {emoji}
-          </span>
-        );
-      })}
-    </>
+      <div className="input">
+        <input
+          className="inputText"
+          onChange={inputClickHandler}
+          placeholder="Enter emoji"
+        />
+        <h2>Meaning: {meaning}</h2>
+        <h3>Emojis We Know</h3>
+      </div>
+      <div className="emojis">
+        {emojisWeKnow.map((emoji) => {
+          return (
+            <span onClick={() => emojiClickHandler(emoji)} key={emoji}>
+              {emoji}
+            </span>
+          );
+        })}
+      </div>
+      <footer>Emoji Interpreter: Enter emoji to get the meaning of it.</footer>
+    </div>
   );
 };
 
