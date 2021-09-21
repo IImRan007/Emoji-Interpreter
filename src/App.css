@@ -41,12 +41,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   flex-wrap: wrap;
 }
 
 span {
   padding: 1rem;
+  cursor: pointer;
 }
 
 footer {
