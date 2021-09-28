@@ -26,10 +26,11 @@ const App = () => {
     var userInput = event.target.value;
     var meaning = emojiDictionary[userInput];
 
-    if (meaning === undefined) {
-      return "We don't have this emoji in our database.";
+    if (meaning !== undefined) {
+      setMeaning(meaning);
+    } else {
+      setMeaning("We don't have this emoji in our database.");
     }
-    setMeaning(meaning);
   }
 
   function emojiClickHandler(emoji) {
