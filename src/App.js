@@ -29,7 +29,7 @@ const App = () => {
     if (meaning !== undefined) {
       setMeaning(meaning);
     } else {
-      setMeaning("We don't have this emoji in our database.");
+      return "We don't have this emoji in our database.";
     }
   }
 
